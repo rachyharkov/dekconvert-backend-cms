@@ -29,8 +29,6 @@
 
 <script src="{{ asset('vendors/progressbar/jquery.barfiller.js') }}"></script>
 
-<script src="{{ asset('vendors/tagsinput/tagsinput.js') }}"></script>
-
 <script src="{{ asset('vendors/text_editor/summernote-bs4.js') }}"></script>
 <script src="{{ asset('vendors/am_chart/amcharts.js') }}"></script>
 
@@ -61,6 +59,6 @@
     });
 </script>
 
-<script src="{{ asset('js/custom.js') }}"></script>
+{{-- <script src="{{ asset('js/custom.js') }}"></script> --}}
 
 @stack('js')

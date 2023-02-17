@@ -4,6 +4,7 @@ use App\Http\Controllers\ContactInformationController;
 use App\Http\Controllers\InstruksiTransaksiController;
 use App\Http\Controllers\KetentuanSyaratController;
 use App\Http\Controllers\KursRateController;
+use App\Http\Controllers\SeoSettingController;
 use App\Http\Controllers\SimcardProviderController;
 use App\Http\Controllers\SocialmediaController;
 use Illuminate\Support\Facades\Route;
@@ -69,6 +70,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::prefix('instruksi_transaksi')->controller(InstruksiTransaksiController::class)->group(function() {
         Route::get('/', 'index')->name('instruksi_transaksi.index');
         Route::post('/upload_image', 'upload_image')->name('instruksi_transaksi.uploadimage');
+    });
+
+    Route::prefix('seo_settings')->controller(SeoSettingController::class)->group(function() {
+        Route::get('/', 'index')->name('seo_setting.index');
     });
 });
 
