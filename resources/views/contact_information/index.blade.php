@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'Contact Information')
+
 @section('content')
     <livewire:contact-information />
 @endsection

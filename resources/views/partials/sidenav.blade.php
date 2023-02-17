@@ -31,7 +31,7 @@
             </a>
         </li>
         <li class="">
-            <a href="#" aria-expanded="false">
+            <a href="{{route('ketentuan_syarat.index')}}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/4.svg" alt="" />
                 </div>

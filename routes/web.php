@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactInformationController;
+use App\Http\Controllers\KetentuanSyaratController;
 use App\Http\Controllers\KursRateController;
 use App\Http\Controllers\SimcardProviderController;
 use App\Http\Controllers\SocialmediaController;
@@ -57,6 +58,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::prefix('contact_information')->controller(ContactInformationController::class)->group(function() {
         Route::get('/', 'index')->name('contact.index');
+    });
+
+    Route::prefix('syarat_ketentuan')->controller(KetentuanSyaratController::class)->group(function() {
+        Route::get('/', 'index')->name('ketentuan_syarat.index');
+        Route::post('/upload_image', 'upload_image')->name('ketentuan_syarat.uploadimage');
     });
 });
 
