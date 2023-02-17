@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'Social Media')
+
 @section('content')
     <style>
         .upload-btn-wrapper {
