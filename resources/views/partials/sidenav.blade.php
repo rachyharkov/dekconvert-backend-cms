@@ -39,7 +39,7 @@
             </a>
         </li>
         <li class="">
-            <a href="#" aria-expanded="false">
+            <a href="{{route('instruksi_transaksi.index')}}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/5.svg" alt="" />
                 </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Ketentuan Syarat')
+@section('page-title', 'Instruksi Transaksi')
 
 @section('content')
     <style>
@@ -24,7 +24,7 @@
             list-style-type: decimal;
         }
     </style>
-    <livewire:ketentuan-syarat />
+    <livewire:instruksi-transaksi />
 @endsection
 
 @push('js')
@@ -54,7 +54,7 @@
                 _initRequest() {
                     const xhr = this.xhr = new XMLHttpRequest();
 
-                    xhr.open('POST', "{{ route('ketentuan_syarat.uploadimage', ['_token' => csrf_token()]) }}", true);
+                    xhr.open('POST', "{{ route('instruksi_transaksi.uploadimage', ['_token' => csrf_token()]) }}", true);
                     xhr.responseType = 'json';
                 }
 
@@ -119,7 +119,6 @@
                             'imageUpload',
                             'undo',
                             'redo',
-                            // add button save
                             'save'
                         ]
                     },
@@ -131,7 +130,6 @@
                             'mergeTableCells'
                         ]
                     },
-                    // set max height to 70vh
                     height: '70vh',
                     licenseKey: '',
                 })
@@ -143,11 +141,9 @@
                     saveButton.innerHTML = 'Save';
                     saveButton.addEventListener('click', () => {
                         const data = {
-                            // get data from editor htmlencoded
-                            ketentuan_syarat_text: editor.getData()
+                            instruksi_transaksi_text: editor.getData()
                         }
-                        // console.log(data);
-                        Livewire.emit('saveKetentuanSyarat', data)
+                        Livewire.emit('saveInstruksiTransaksi', data)
 
                     });
 
@@ -159,17 +155,13 @@
                 });
         }
 
-        Livewire.on('ketentuanSyaratSaved', event => {
+        Livewire.on('instruksiTransaksiSaved', event => {
             Toast.fire({
                 icon: 'success',
-                title: 'Ketentuan dan syarat has been saved'
+                title: 'Instruksi Transaksi has been saved'
             })
-            // CKEDITOR.instances.ckeditortextarea.destroy();
-            // scriptAnu();
 
         });
         scriptAnu();
-
-        // console.log(ClassicEditor)
     </script>
 @endpush
