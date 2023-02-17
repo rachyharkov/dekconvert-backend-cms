@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KursRateController;
 use App\Http\Controllers\SimcardProviderController;
+use App\Http\Controllers\SocialmediaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,6 +44,14 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::prefix('kurs-rate')->controller(KursRateController::class)->group(function() {
         Route::post('/update', 'update')->name('kurs_rate.update');
+    });
+
+    Route::prefix('social_media')->controller(SocialmediaController::class)->group(function() {
+        Route::get('/', 'index')->name('social_media.index');
+        Route::post('/store', 'store')->name('social_media.store');
+        Route::post('/update', 'update')->name('social_media.update');
+        Route::delete('/{post}/delete', 'destroy')->name('social_media.destroy');
+        Route::post('/upload_image', 'upload_image')->name('social_media.uploadimage');
     });
 });
 

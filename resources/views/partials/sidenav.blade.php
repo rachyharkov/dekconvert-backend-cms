@@ -23,7 +23,7 @@
             </a>
         </li>
         <li class="">
-            <a href="#" aria-expanded="false">
+            <a href="{{route('social_media.index')}}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/3.svg" alt="" />
                 </div>
