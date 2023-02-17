@@ -29,3 +29,6 @@
 
 <link rel="stylesheet" href="{{asset('css/style1.css')}}"/>
 <link rel="stylesheet" href="{{asset('css/colors/default.css')}}" id="colorSkinCSS">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap5.css" integrity="sha512-pZE3NzBgokXUM9YLBGQIw99omcxiRdkMhZkz0o7g0VjC0tCFlBUqbcLKUuX8+jfsZgiZNIWFiLuZpLxXoxi53w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+@stack('styles')
+@livewireStyles

@@ -7,7 +7,7 @@
     </div>
     <ul id="sidebar_menu">
         <li class="mm-active">
-            <a href="#" aria-expanded="false">
+            <a href="{{ route('dashboard') }}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/dashboard.svg" alt="" />
                 </div>
@@ -15,7 +15,7 @@
             </a>
         </li>
         <li class="">
-            <a href="#" aria-expanded="false">
+            <a href="{{ route('simcard_provider.index') }}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/2.svg" alt="" />
                 </div>
