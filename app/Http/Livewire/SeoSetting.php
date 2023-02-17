@@ -62,15 +62,28 @@ class SeoSetting extends Component
     {
         if ($this->seo['shortcut_icon'] instanceof \Illuminate\Http\UploadedFile) {
 
+            if (file_exists(public_path('img/shortcut_icon.png'))) {
+                unlink(public_path('img/shortcut_icon.png'));
+            }
+
+            $file = $this->seo['shortcut_icon'];
+            $store = Storage::disk('mycustompublicvisitorasset')->put('shortcut_icon.png', $file->get());
+            $getfile = Storage::disk('mycustompublicvisitorasset')->get('shortcut_icon.png');
+            move_uploaded_file($getfile, public_path('img/shortcut_icon.png'));
+            $this->seo['shortcut_icon'] = 'shortcut_icon.png';
+        }
+
+        if ($this->seo['og_image'] instanceof \Illuminate\Http\UploadedFile) {
+
             if (file_exists(public_path('img/og_image.png'))) {
                 unlink(public_path('img/og_image.png'));
             }
 
-            $file = $this->seo['shortcut_icon'];
+            $file = $this->seo['og_image'];
             $store = Storage::disk('mycustompublicvisitorasset')->put('og_image.png', $file->get());
             $getfile = Storage::disk('mycustompublicvisitorasset')->get('og_image.png');
             move_uploaded_file($getfile, public_path('img/og_image.png'));
-            $this->seo['shortcut_icon'] = 'og_image.png';
+            $this->seo['og_image'] = 'og_image.png';
         }
         ModelsSeoSetting::first()->update($this->seo);
         $this->refreshData();
