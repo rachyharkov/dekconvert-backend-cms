@@ -8,7 +8,7 @@ use Livewire\Component;
 class KetentuanSyarat extends Component
 {
 
-    public $ketentuan_syarat_text;
+    public $ketentuan_syarat_text, $updated_at;
 
     protected $listeners = [
         'saveKetentuanSyarat'
@@ -17,6 +17,7 @@ class KetentuanSyarat extends Component
     public function mount()
     {
         $dataText = ModelsKetentuanSyarat::first()->ketentuan_syarat_text;
+        $this->updated_at = ModelsKetentuanSyarat::first()->updated_at;
         $this->ketentuan_syarat_text = html_entity_decode($dataText);
     }
 
@@ -34,6 +35,8 @@ class KetentuanSyarat extends Component
             ['id' => 1],
             $data
         );
+
+        $this->updated_at = $data['updated_at'];
 
         $this->emit('ketentuanSyaratSaved', ['message' => 'Ketentuan Syarat has been saved!']);
     }
