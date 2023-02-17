@@ -71,7 +71,7 @@
             </a>
             <ul>
                 <li><a href="wow_animation.html">SEO</a></li>
-                <li><a href="Scroll_Reveal.html">Kontak</a></li>
+                <li><a href="{{route('contact.index')}}">Kontak</a></li>
                 <li><a href="tilt.html">Tentang</a></li>
             </ul>
         </li>

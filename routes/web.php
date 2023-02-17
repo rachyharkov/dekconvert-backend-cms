@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactInformationController;
 use App\Http\Controllers\KursRateController;
 use App\Http\Controllers\SimcardProviderController;
 use App\Http\Controllers\SocialmediaController;
@@ -52,6 +53,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::post('/update', 'update')->name('social_media.update');
         Route::delete('/{post}/delete', 'destroy')->name('social_media.destroy');
         Route::post('/upload_image', 'upload_image')->name('social_media.uploadimage');
+    });
+
+    Route::prefix('contact_information')->controller(ContactInformationController::class)->group(function() {
+        Route::get('/', 'index')->name('contact.index');
     });
 });
 

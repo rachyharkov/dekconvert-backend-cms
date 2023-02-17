@@ -49,6 +49,7 @@
   referrerpolicy="no-referrer"
 ></script>
 @include('sweetalert::alert')
+@livewireScripts
 
 <script>
     const Toast = Swal.mixin({
@@ -61,6 +62,5 @@
 </script>
 
 <script src="{{ asset('js/custom.js') }}"></script>
-@stack('js')
 
-@livewireScripts
+@stack('js')
