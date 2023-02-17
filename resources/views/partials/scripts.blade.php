@@ -50,6 +50,16 @@
 ></script>
 @include('sweetalert::alert')
 
+<script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+    });
+</script>
+
 <script src="{{ asset('js/custom.js') }}"></script>
 @stack('js')
 

@@ -105,12 +105,9 @@
                         // trigger event setMenu with parameter 'index'
                         window.livewire.emit('setPage', 'index');
 
-                        Swal.fire({
-                            title: 'Success!',
-                            text: response.message,
+                        Toast.fire({
                             icon: 'success',
-                            confirmButtonText: 'OK',
-                            timer: 3000
+                            title: 'Berhasil menyimpan data'
                         })
                     },
                     error: function(response) {
