@@ -25,6 +25,7 @@
 <script src="{{ asset('vendors/datatable/js/vfs_fonts.js') }}"></script>
 <script src="{{ asset('vendors/datatable/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('vendors/datatable/js/buttons.print.min.js') }}"></script>
+<script src="{{ asset('vendors/datatable/js/ellipsis.js') }}"></script>
 <script src="{{ asset('js/chart.min.js') }}"></script>
 
 <script src="{{ asset('vendors/progressbar/jquery.barfiller.js') }}"></script>
