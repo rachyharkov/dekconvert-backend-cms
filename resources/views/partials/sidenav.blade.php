@@ -47,7 +47,7 @@
             </a>
         </li>
         <li class="">
-            <a href="#" aria-expanded="false">
+            <a href="{{ route('testimoni.index') }}" aria-expanded="false">
                 <div class="icon_menu">
                     <img src="img/menu-icon/7.svg" alt="" />
                 </div>

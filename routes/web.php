@@ -8,6 +8,7 @@ use App\Http\Controllers\KursRateController;
 use App\Http\Controllers\SeoSettingController;
 use App\Http\Controllers\SimcardProviderController;
 use App\Http\Controllers\SocialmediaController;
+use App\Http\Controllers\TestimoniController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -82,6 +83,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::post('/store', 'store')->name('faq.store');
         Route::post('/update', 'update')->name('faq.update');
         Route::delete('/{post}/delete', 'destroy')->name('faq.destroy');
+    });
+
+    Route::prefix('testimoni')->controller(TestimoniController::class)->group(function() {
+        Route::get('/', 'index')->name('testimoni.index');
+        Route::post('/store', 'store')->name('testimoni.store');
+        Route::post('/update', 'update')->name('testimoni.update');
+        Route::delete('/{post}/delete', 'destroy')->name('testimoni.destroy');
     });
 });
 
