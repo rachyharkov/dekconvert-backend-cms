@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactInformationController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\InstruksiTransaksiController;
 use App\Http\Controllers\KetentuanSyaratController;
 use App\Http\Controllers\KursRateController;
@@ -74,6 +75,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::prefix('seo_settings')->controller(SeoSettingController::class)->group(function() {
         Route::get('/', 'index')->name('seo_setting.index');
+    });
+
+    Route::prefix('faq')->controller(FaqController::class)->group(function() {
+        Route::get('/', 'index')->name('faq.index');
+        Route::post('/store', 'store')->name('faq.store');
+        Route::post('/update', 'update')->name('faq.update');
+        Route::delete('/{post}/delete', 'destroy')->name('faq.destroy');
     });
 });
 
