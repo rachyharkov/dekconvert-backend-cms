@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactInformationController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\InstruksiTransaksiController;
@@ -76,6 +77,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::prefix('seo_settings')->controller(SeoSettingController::class)->group(function() {
         Route::get('/', 'index')->name('seo_setting.index');
+    });
+
+    Route::prefix('about')->controller(AboutController::class)->group(function() {
+        Route::get('/', 'index')->name('about.index');
     });
 
     Route::prefix('faq')->controller(FaqController::class)->group(function() {

@@ -72,7 +72,7 @@
             <ul>
                 <li><a href="{{route('seo_setting.index')}}">SEO</a></li>
                 <li><a href="{{route('contact.index')}}">Kontak</a></li>
-                <li><a href="tilt.html">Tentang</a></li>
+                <li><a href="{{route('about.index')}}">Tentang</a></li>
             </ul>
         </li>
     </ul>
