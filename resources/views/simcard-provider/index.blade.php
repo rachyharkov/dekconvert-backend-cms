@@ -72,8 +72,7 @@
                             searchable: false
                         }
                     ],
-                    scrollY: '50vh',
-                    scrollCollapse: true,
+
             });
         }
         function form_script() {

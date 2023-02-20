@@ -10,7 +10,7 @@ class InstruksiTransaksi extends Component
     public $instruksi_transaksi_text, $updated_at;
 
     protected $listeners = [
-        'saveInstruksiStransaksi'
+        'saveInstruksiTransaksi'
     ];
 
     public function mount()
@@ -24,7 +24,7 @@ class InstruksiTransaksi extends Component
         return view('livewire.instruksi-transaksi');
     }
 
-    public function saveInstruksiStransaksi($data)
+    public function saveInstruksiTransaksi($data)
     {
         $data['instruksi_transaksi_text'] = htmlentities($data['instruksi_transaksi_text']);
         $data['updated_at'] = now();

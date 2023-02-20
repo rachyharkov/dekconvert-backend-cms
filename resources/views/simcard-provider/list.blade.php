@@ -16,13 +16,15 @@
         </div>
     </div>
 </div>
-<table class="table table-striped table-bordered" id="simcard_providers-table">
-    <thead>
-        <tr>
-            <th>Simcard Provider</th>
-            <th>Status</th>
-            <th>Created At</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-</table>
+<div class="white_box mb_30">
+    <table class="table" id="simcard_providers-table">
+        <thead>
+            <tr>
+                <th>Simcard Provider</th>
+                <th>Status</th>
+                <th>Created At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>

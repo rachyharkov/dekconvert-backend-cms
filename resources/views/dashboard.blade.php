@@ -206,7 +206,7 @@
                                     <tbody>
                                         <tr style="border: hidden">
                                             <td>
-                                                <img class="byder_thumb" src="img/Payment/1.png" alt="" />
+                                                <img class="byder_thumb" src="{{ asset('img/Payment/1.png') }}" alt="" />
                                             </td>
                                             <td>
                                                 <div class="payment_gatway">
@@ -229,7 +229,7 @@
                                         </tr>
                                         <tr style="border: hidden">
                                             <td>
-                                                <img class="byder_thumb" src="img/Payment/2.png" alt="" />
+                                                <img class="byder_thumb" src="{{ asset('img/Payment/2.png') }}" alt="" />
                                             </td>
                                             <td>
                                                 <div class="payment_gatway">
@@ -252,7 +252,7 @@
                                         </tr>
                                         <tr style="border: hidden">
                                             <td>
-                                                <img class="byder_thumb" src="img/Payment/3.png" alt="" />
+                                                <img class="byder_thumb" src="{{ asset('img/Payment/3.png') }}" alt="" />
                                             </td>
                                             <td>
                                                 <div class="payment_gatway">
@@ -275,7 +275,7 @@
                                         </tr>
                                         <tr style="border: hidden">
                                             <td>
-                                                <img class="byder_thumb" src="img/Payment/4.png" alt="" />
+                                                <img class="byder_thumb" src="{{ asset('img/Payment/4.png') }}" alt="" />
                                             </td>
                                             <td>
                                                 <div class="payment_gatway">
@@ -298,7 +298,7 @@
                                         </tr>
                                         <tr style="border: hidden">
                                             <td>
-                                                <img class="byder_thumb" src="img/Payment/5.png" alt="" />
+                                                <img class="byder_thumb" src="{{ asset('img/Payment/5.png') }}" alt="" />
                                             </td>
                                             <td>
                                                 <div class="payment_gatway">
@@ -359,7 +359,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="w_70">
-                                                <img class="byder_thumb wh_56" src="img/Payment/check_1.png"
+                                                <img class="byder_thumb wh_56" src="{{ asset('img/Payment/check_1.png') }}"
                                                     alt="" />
                                             </td>
                                             <td>
@@ -383,7 +383,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="byder_thumb wh_56" src="img/Payment/check_2.png"
+                                                <img class="byder_thumb wh_56" src="{{ asset('img/Payment/check_2.png') }}"
                                                     alt="" />
                                             </td>
                                             <td>
@@ -407,7 +407,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="byder_thumb wh_56" src="img/Payment/check_3.png"
+                                                <img class="byder_thumb wh_56" src="{{ asset('img/Payment/check_3.png') }}"
                                                     alt="" />
                                             </td>
                                             <td>
@@ -431,7 +431,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="byder_thumb wh_56" src="img/Payment/check_4.png"
+                                                <img class="byder_thumb wh_56" src="{{ asset('img/Payment/check_4.png') }}"
                                                     alt="" />
                                             </td>
                                             <td>
@@ -455,7 +455,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="byder_thumb wh_56" src="img/Payment/check_5.png"
+                                                <img class="byder_thumb wh_56" src="{{ asset('img/Payment/check_5.png') }}"
                                                     alt="" />
                                             </td>
                                             <td>
@@ -554,7 +554,7 @@
                                         </div>
                                     </div>
                                     <div class="single_social_media d-flex align-items-center">
-                                        <img class="img-fluid" src="img/plane.png" alt="" />
+                                        <img class="img-fluid" src="{{ asset('img/plane.png') }}" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -704,7 +704,7 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <img class="user_thumb" src="img/invoice_img/man_1.png" alt="" />
+                                                <img class="user_thumb" src="{{ asset('img/invoice_img/man_1') }}.png" alt="" />
                                             </td>
                                             <td>Product</td>
                                             <td class="nowrap">Tom Smitn</td>
@@ -713,7 +713,7 @@
                                             <td>High</td>
                                             <td>Oct</td>
                                             <td>
-                                                <img class="check_status" src="img/invoice_img/check.png"
+                                                <img class="check_status" src="{{ asset('img/invoice_img/check') }}.png"
                                                     alt="" />
                                             </td>
                                             <td>25/10/2020</td>
@@ -721,7 +721,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="user_thumb" src="img/invoice_img/man_2.png" alt="" />
+                                                <img class="user_thumb" src="{{ asset('img/invoice_img/man_2') }}.png" alt="" />
                                             </td>
                                             <td>Product</td>
                                             <td class="nowrap">Tom Smitn</td>
@@ -730,7 +730,7 @@
                                             <td>High</td>
                                             <td>Oct</td>
                                             <td>
-                                                <img class="check_status" src="img/invoice_img/check.png"
+                                                <img class="check_status" src="{{ asset('img/invoice_img/check') }}.png"
                                                     alt="" />
                                             </td>
                                             <td>25/10/2020</td>
@@ -738,7 +738,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="user_thumb" src="img/invoice_img/man_3.png" alt="" />
+                                                <img class="user_thumb" src="{{ asset('img/invoice_img/man_3') }}.png" alt="" />
                                             </td>
                                             <td>Product</td>
                                             <td class="nowrap">Tom Smitn</td>
@@ -747,7 +747,7 @@
                                             <td>High</td>
                                             <td>Oct</td>
                                             <td>
-                                                <img class="check_status" src="img/invoice_img/check.png"
+                                                <img class="check_status" src="{{ asset('img/invoice_img/check') }}.png"
                                                     alt="" />
                                             </td>
                                             <td>25/10/2020</td>
@@ -755,7 +755,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="user_thumb" src="img/invoice_img/man_4.png" alt="" />
+                                                <img class="user_thumb" src="{{ asset('img/invoice_img/man_4') }}.png" alt="" />
                                             </td>
                                             <td>Product</td>
                                             <td class="nowrap">Tom Smitn</td>
@@ -764,7 +764,7 @@
                                             <td>High</td>
                                             <td>Oct</td>
                                             <td>
-                                                <img class="check_status" src="img/invoice_img/close.png"
+                                                <img class="check_status" src="{{ asset('img/invoice_img/close') }}.png"
                                                     alt="" />
                                             </td>
                                             <td>25/10/2020</td>
@@ -772,7 +772,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img class="user_thumb" src="img/invoice_img/man_5.png" alt="" />
+                                                <img class="user_thumb" src="{{ asset('img/invoice_img/man_5') }}.png" alt="" />
                                             </td>
                                             <td>Product</td>
                                             <td class="nowrap">Tom Smitn</td>
@@ -781,7 +781,7 @@
                                             <td>High</td>
                                             <td>Oct</td>
                                             <td>
-                                                <img class="check_status" src="img/invoice_img/close.png"
+                                                <img class="check_status" src="{{ asset('img/invoice_img/close') }}.png"
                                                     alt="" />
                                             </td>
                                             <td>25/10/2020</td>

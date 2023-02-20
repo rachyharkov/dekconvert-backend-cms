@@ -1,4 +1,4 @@
-<div class="page-content">
+<div class="white_box mb_30">
     <h5 class="text-end">{{$titlenya}}</h5>
     <form id="formnya" action="{{ route('kurs-rate.update', $id_simcard_provider) }}" method="POST">
         <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-save"></i> Save</button>

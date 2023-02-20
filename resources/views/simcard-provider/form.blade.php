@@ -1,35 +1,30 @@
-
-<div class="page-content">
-    <div class="card" style="overflow: hidden;">
-        <div class="card-body">
-            <form id="formnya" action="{{ $action }}" method="{{ $method }}" enctype="multipart/form-data">
-                <div class="form-group mt-2">
-                    <label for="simcard_provider_name">Provider Name</label>
-                    <input type="text" class="form-control" id="simcard_provider_name" name="simcard_provider_name" placeholder="Enter title" value="{{ $simcard_provider_name }}">
-                </div>
-                <div class="form-group mt-2">
-                    <label for="simcard_provider_keterangan">Keterangan</label>
-                    <textarea class="form-control" id="simcard_provider_keterangan" name="simcard_provider_keterangan" rows="3">{{ $simcard_provider_keterangan }}</textarea>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="simcard_provider_image">Gambar</label>
-                    <input type="file" class="form-control" id="simcard_provider_image" name="simcard_provider_image" placeholder="Enter title" accept="image/*">
-                    <img id="frame" src="{{ asset('img/simcard_provider/'.$simcard_provider_image) }}" style="width: 10rem; margin-top: 10px; display: {{ $simcard_provider_image ? 'block' : 'none' }}">
-                </div>
-                <div class="form-group mt-2 w-100">
-
-                    @if($page == 'edit')
-                        <input type="hidden" name="simcard_provider_id" value="{{ $id_simcard_provider }}">
-                        <input type="hidden" name="simcard_provider_image_old" value="{{ $simcard_provider_image }}">
-                    @endif
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
-                    <button type="reset" class="btn btn-warning btn-reset"><i class="fa fa-undo"></i> Reset</button>
-                    <button type="button" wire:click="setPage('index')" class="btn btn-default">Cancel</button>
-                    {{ csrf_field() }}
-                </div>
-            </form>
+<div class="white_box mb_30">
+    <form id="formnya" action="{{ $action }}" method="{{ $method }}" enctype="multipart/form-data">
+        <div class="form-group mt-2">
+            <label for="simcard_provider_name">Provider Name</label>
+            <input type="text" class="form-control" id="simcard_provider_name" name="simcard_provider_name" placeholder="Enter title" value="{{ $simcard_provider_name }}">
         </div>
-    </div>
+        <div class="form-group mt-2">
+            <label for="simcard_provider_keterangan">Keterangan</label>
+            <textarea class="form-control" id="simcard_provider_keterangan" name="simcard_provider_keterangan" rows="3">{{ $simcard_provider_keterangan }}</textarea>
+        </div>
+        <div class="form-group mt-2">
+            <label for="simcard_provider_image">Gambar</label>
+            <input type="file" class="form-control" id="simcard_provider_image" name="simcard_provider_image" placeholder="Enter title" accept="image/*">
+            <img id="frame" src="{{ asset('img/simcard_provider/'.$simcard_provider_image) }}" style="width: 10rem; margin-top: 10px; display: {{ $simcard_provider_image ? 'block' : 'none' }}">
+        </div>
+        <div class="form-group mt-2 w-100">
+
+            @if($page == 'edit')
+                <input type="hidden" name="simcard_provider_id" value="{{ $id_simcard_provider }}">
+                <input type="hidden" name="simcard_provider_image_old" value="{{ $simcard_provider_image }}">
+            @endif
+            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+            <button type="reset" class="btn btn-warning btn-reset"><i class="fa fa-undo"></i> Reset</button>
+            <button type="button" wire:click="setPage('index')" class="btn btn-default">Cancel</button>
+            {{ csrf_field() }}
+        </div>
+    </form>
     <script>
         $(document).ready(function() {
 
