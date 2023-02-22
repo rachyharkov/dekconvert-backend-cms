@@ -5,10 +5,7 @@
                 <span class="subheading mb-2">Testimonials</span>
                 <h1 class="heading mb-3">Testimonials</h1>
                 <p>
-                    Far far away, behind the word mountains, far from the countries
-                    Vokalia and Consonantia, there live the blind texts. Separated
-                    they live in Bookmarksgrove right at the coast of the Semantics, a
-                    large language ocean.
+                    Banyak sekali pelanggan yang puas dengan pelayanan kami, berikut adalah beberapa testimoni dari pelanggan yang mengirimkan testimoni kepada kami.
                 </p>
             </div>
         </div>
@@ -203,6 +200,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row" style="margin-top: 5rem;">
+            <p class="w-100 text-center">
+                Sudah memanfaatkan layanan kami dan ingin berbagi testimoni? Kami sangat mengharapkan hal tersebut!
+            </p>
+            <a href="#" class="btn btn-primary mx-auto" style="width: max-content;">Berikan Testimoni</a>
         </div>
     </div>
 </div>

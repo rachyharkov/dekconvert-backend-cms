@@ -1776,7 +1776,8 @@ textarea {
   padding-top: 12rem;
   padding-bottom: 10rem;
   min-height: 600px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .hero-section:after {
     position: absolute;
     content: "";
@@ -1786,6 +1787,7 @@ textarea {
     background-size: cover;
     width: 1113.97px;
     height: 850.62px;
+    filter: brightness(0.95);
     z-index: -1; }
   .hero-section .img-wrap {
     position: relative; }

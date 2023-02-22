@@ -10,16 +10,16 @@
             </div>
         </div>
         <div class="row g-5 text-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="0">
                 <div class="feature text-center">
                     <div class="icon"><span class="flaticon-startup"></span></div>
                     <h3>Pelayanan Cepat</h3>
                     <p>
-                        Kami memberikan proses konversi pulsa dengan cepat dan aman tanpa pusing memikirkan banyak hal.
+                        Proses convert pulsa di DEKonvert terbukti mudah, simple, aman, terpercaya, dan CEPAT. Karena kami mengerti, urgensi Anda adalah prioritas kami.
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature text-center">
                     <div class="icon"><span class="flaticon-link"></span></div>
                     <h3>Mendukung Banyak E-Wallet</h3>
@@ -28,7 +28,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature text-center">
                     <div class="icon"><span class="flaticon-trophy"></span></div>
                     <h3>Juaranya Rate Kurs Tinggi</h3>
@@ -37,6 +37,17 @@
                     </p>
                 </div>
             </div>
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature text-center">
+                    <div class="icon"><span class="flaticon-shield"></span></div>
+                    <h3>Terpercaya Berkat Pelayanan</h3>
+                    <p>
+                        Atas testimoni dari para pelanggan, sejak 2017 kami telah terpercaya dan terbukti bahwa kami memberikan pelayanan terbaik.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

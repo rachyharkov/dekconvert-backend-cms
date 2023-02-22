@@ -2,19 +2,20 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-7" data-aos="fade-up">
-                <img src="{{ asset('visitor_assets/images/about_1.png') }}" alt="Image" class="img-fluid" />
+                <img src="{{ asset('visitor_assets/images/Ilustrasi-Pulsa-dan-Uang.webp') }}" alt="Image" class="img-fluid" />
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="subheading mb-2">Tentang Kami</h3>
-                <h2 class="heading mb-4">Tentang Dek Convert</h2>
+                <h2 class="heading mb-4">Dek Convert</h2>
                 <p>
-                    Dek Convert merupakan badan usaha yang bergerak dibidang jasa convert / sulap / jual / tukar pulsa menjadi uang/saldo rekening/saldo fintech/saldo ecommerce dll. Jumlah uang yang diterima berdasarkan nilai tukar yang telah ditentukan/disepakati bersama yang disebut dengan istilah rate.
+                    Pada saat kita membutuhkan uang dan yang kita punya hanyalah pulsa. Ketika itu terjadi, Anda tak perlu pusing dan gundah gulana. Karena DEKonvert punya solusinya. Tukarkan pulsa Anda dengan rate tertinggi. Pilihan transfer bisa ke rekening bank Anda, maupun ke e-wallet pilihan Anda, OVO, Gopay, DANA, LinkAja, ShopeePay,dan juga yang lainnya.
+
                 </p>
                 <p class="mb-3">
-                    Banyak sekali penyedia jasa convert pulsa yang ada di internet, namun kami berusaha untuk memberikan pelayanan terbaik kepada pelanggan, kami menjamin hal-hal berikut:
+                    Jangan salah pilih! Gunakan yang sudah terbukti aman dan terpercaya. Gunakan DEKonvert, konversi pulsa, uang sampai, hati lega.
                 </p>
                 <ul class="list-check list-unstyled mb-5">
-                    <li>Pelayanan cepat, Transparan dan Aman</li>
+                    <li>Pelayanan cepat, Transparan dan Aman sejak 2017</li>
                     <li>Tukar pulsa dengan rate tinggi dan nego</li>
                     <li>Kami memahami kebutuhan anda, maka dari itu kami ingin anda merasa nyaman dan aman dalam bertransaksi dengan kami</li>
                 </ul>

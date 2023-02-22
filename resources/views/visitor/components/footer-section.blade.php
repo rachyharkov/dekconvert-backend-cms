@@ -3,11 +3,8 @@
         <div class="row mb-5">
             <div class="col-md-6 col-lg-4">
                 <div class="widget">
-                    <h3 class="heading">About Cololib</h3>
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts.
-                    </p>
+                    <h3 class="heading">Tentang DekConvert</h3>
+                    <div><?= html_entity_decode($about_text) ?></div>
                 </div>
                 <div class="widget">
                     <ul class="list-unstyled social">
@@ -63,13 +60,12 @@
             <div class="col-lg-12 text-center">
                 <p>
                     Copyright &copy;
-                    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script>
                         document.write(new Date().getFullYear());
                     </script>
-                    All rights reserved | This template is made with
+                    All rights reserved | made with
                     <i class="icon-heart text-danger" aria-hidden="true"></i> by
-                    <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Colorlib</a>
+                    <a href="https://rnh-is.me" target="_blank" rel="nofollow noopener">rachyharkov</a>
                 </p>
             </div>
         </div>
