@@ -38,9 +38,13 @@
         @include('visitor.partials.header')
     </head>
     <body>
-        @include('visitor.components.navbar')
-        <livewire:visitor.index />
-
+        <livewire:visitor.index :page="$page"/>
+        <div id="overlayer"></div>
+        <div class="loader">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         @include('visitor.partials.scripts')
     </body>
 </html>

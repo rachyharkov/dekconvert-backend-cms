@@ -1,44 +1,33 @@
-<div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-            <span class="icofont-close js-menu-toggle"></span>
+<div style="position: sticky;
+top: 0;
+z-index: 999;">
+    <div class="site-mobile-menu site-navbar-target bg-white">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
         </div>
+        <div class="site-mobile-menu-body"></div>
     </div>
-    <div class="site-mobile-menu-body"></div>
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="/" class="logo m-0 mt-2 float-start"><img src="{{ asset('img/dek-convert-logo.png') }}" alt="Image"
+                        class="img-fluid" style="transform: scale(1.5) translateY(-4px); width: 66px;" /></a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li id="menu-home"><a href="home">Home</a></li>
+                    <li id="menu-tentang"><a href="tentang">Tentang Kami</a></li>
+                    <li id="menu-testimoni"><a href="testimoni">Testimoni</a></li>
+                    <li id="menu-faq"><a href="faq">FAQ</a></li>
+                    <li id="menu-syarat-dan-ketentuan"><a href="syarat-dan-ketentuan">Syarat & Ketentuan</a></li>
+                    {{-- <li class="cta-button"><a href="home">Download now</a></li> --}}
+                </ul>
+                <a href="#"
+                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
 </div>
-<nav class="site-nav mt-3">
-    <div class="container">
-        <div class="site-navigation">
-            <a href="index.html" class="logo m-0 mt-2 float-start"><img src="{{ asset('img/logo-web.png') }}" alt="Image"
-                    class="img-fluid" /></a>
-            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-                <li class="active"><a href="index.html">Home</a></li>
-                {{-- <li class="has-children">
-                    <a href="#">Dropdown</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li class="has-children">
-                            <a href="#">Menu Two</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Sub Menu One</a></li>
-                                <li><a href="#">Sub Menu Two</a></li>
-                                <li><a href="#">Sub Menu Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Menu Three</a></li>
-                    </ul>
-                </li> --}}
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html">Testimoni</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Syarat & Ketentuan</a></li>
-                {{-- <li class="cta-button"><a href="#">Download now</a></li> --}}
-            </ul>
-            <a href="#"
-                class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-                data-toggle="collapse" data-target="#main-navbar">
-                <span></span>
-            </a>
-        </div>
-    </div>
-</nav>

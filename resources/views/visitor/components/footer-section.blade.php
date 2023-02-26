@@ -1,4 +1,5 @@
 <div class="site-footer">
+    <link rel="stylesheet" href="{{ asset('vendors/boxicons/css/boxicons.css') }}">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 col-lg-4">
@@ -8,15 +9,13 @@
                 </div>
                 <div class="widget">
                     <ul class="list-unstyled social">
-                        <li>
-                            <a href="#"><span class="icon-twitter"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="icon-instagram"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="icon-facebook"></span></a>
-                        </li>
+                        @if($social_media)
+                            @foreach ($social_media as $sm)
+                                <li>
+                                    <a href="{{$sm['social_media_url']}}"><i class="{{$sm['social_media_icon']}}"></i></a>
+                                </li>
+                            @endforeach
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -24,9 +23,9 @@
                 <div class="widget">
                     <h3 class="heading">Pages</h3>
                     <ul class="links list-unstyled">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tentang DEKConvert</a></li>
+                        <li><a href="#">Syarat Ketentuan</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,9 +33,9 @@
                 <div class="widget">
                     <h3 class="heading">Resources</h3>
                     <ul class="links list-unstyled">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Cara Memanfaatkan Jasa Kami</a></li>
+                        <li><a href="#">Provider Didukung</a></li>
+                        <li><a href="#">Cara Transfer Pulsa</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,8 +44,7 @@
                     <h3 class="heading">Contact</h3>
                     <ul class="list-unstyled quick-info links">
                         <li class="email">
-                            <a href="#"><span class="__cf_email__"
-                                    data-cfemail="92fbfcf4fdd2d1fdfefdfefbf0">[email&#160;protected]</span></a>
+                            <a href="#"><span class="__cf_email__" data-cfemail="92fbfcf4fdd2d1fdfefdfefbf0">[email&#160;protected]</span></a>
                         </li>
                         <li class="phone"><a href="#">+1 222 212 3819</a></li>
                         <li class="address">

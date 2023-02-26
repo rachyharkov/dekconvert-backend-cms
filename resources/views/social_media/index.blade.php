@@ -151,7 +151,7 @@
                     btnSubmit.style.borderColor = option.background;
 
                     $('#social_media_type').val(value);
-                    $('#social_media_icon').val('bx bxl-' + value);
+                    $('#social_media_icon').val('bx bxl-' + value.toLowerCase());
                     $('#social_media_color_primary').val(option.background);
                     $('#social_media_color_secondary').val(option.color);
 

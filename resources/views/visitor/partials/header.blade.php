@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="{{ asset('visitor_assets/css/tiny-slider.css')}}" />
 <link rel="stylesheet" href="{{ asset('visitor_assets/css/aos.css')}}" />
 <link rel="stylesheet" href="{{ asset('visitor_assets/css/style.css')}}" />
+<link rel="stylesheet" href="{{ asset('vendors/boxicons/css/boxicons.css') }}">
 
 @livewireStyles
 @stack('css')

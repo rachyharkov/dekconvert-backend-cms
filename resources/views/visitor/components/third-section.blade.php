@@ -1,8 +1,26 @@
 <div class="section section-3">
+    <style>
+        .img-about {
+            animation: move 3s infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-7" data-aos="fade-up">
-                <img src="{{ asset('visitor_assets/images/Ilustrasi-Pulsa-dan-Uang.webp') }}" alt="Image" class="img-fluid" />
+                <img src="{{ asset('visitor_assets/images/Ilustrasi-Pulsa-dan-Uang.webp') }}" alt="Image" class="img-fluid img-about" />
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="subheading mb-2">Tentang Kami</h3>

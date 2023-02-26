@@ -7,10 +7,11 @@ use Illuminate\Http\Request;
 
 class VisitorController extends Controller
 {
-    public function index()
+    public $data_seo;
+    public function __construct()
     {
         $fetch_seo_conf = SeoSetting::where('id', 1)->first();
-        $data_seo = [
+        $this->data_seo = [
             'image_src' => $fetch_seo_conf->image_src,
             'meta_title' => $fetch_seo_conf->meta_title,
             'meta_description' => $fetch_seo_conf->meta_description,
@@ -45,6 +46,28 @@ class VisitorController extends Controller
             'twitter_card' => $fetch_seo_conf->twitter_card,
             'twitter_description' => $fetch_seo_conf->twitter_description
         ];
-        return view('welcome', compact('data_seo'));
+    }
+    public function __invoke(Request $request)
+    {
+        return view('welcome', [
+            'page' => $request->page,
+            'data_seo' => $this->data_seo,
+        ]);
+    }
+
+    public function index()
+    {
+        return view('welcome', [
+            'page' => 'home',
+            'data_seo' => $this->data_seo
+        ]);
+    }
+
+    public function fetch_page(Request $request)
+    {
+        return view('welcome', [
+            'page' => $request->page,
+            'data_seo' => $this->data_seo
+        ]);
     }
 }

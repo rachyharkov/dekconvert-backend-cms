@@ -44,15 +44,23 @@
                     Dek Convert merupakan penyedia jasa convert pulsa, tukar pulsa, sulap pulsa ke uang atau saldo rekening dengan rate tinggi, cepat dan aman. Bisa juga tukar pulsa ke saldo E-Wallet seperti <span style="color: #4b2489">OVO</span>, <span style="color: #00aad8">Gopay</span>, <span style="color: #00aad8">Dana</span>, <span style="color: #e12428">LinkAja</span>, <span style="color: #ee4d2d">ShopeePay</span> dan Lainnya.
                 </p>
                 <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="#" class="btn btn-primary mr-2">Convert Sekarang</a>
-                    <a href="#" class="btn btn-outline-primary">
+                    <a href="#" class="btn btn-primary mr-2"><i class="bx bxl-whatsapp" style="
+                        padding: 5px;
+                        position: absolute;
+                        top: -11px;
+                        left: -7px;
+                        background: #25d366;
+                        border-radius: 50%;
+                        font-size: 21px;
+                        "></i> Convert Sekarang!</a>
+                    <a href="faq" class="btn btn-outline-primary">
                         <span class="icon-arrow-right small"></span>
                         Kunjungi FAQ
                     </a>
                 </p>
             </div>
             <div class="col-lg-6">
-                <div class="img-wrap" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
+                <div class="img-wrap" style="position: relative;overflow: hidden;" data-aos="fade-up" data-aos-delay="200">
                     <img src="{{ asset('visitor_assets/images/women.png') }}" alt="Image" class="img-fluid" />
                     <img src="{{ asset('visitor_assets/images/shape_01.png') }}" alt="Image" class="img-fluid" />
                 </div>
