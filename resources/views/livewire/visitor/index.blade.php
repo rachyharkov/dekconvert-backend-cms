@@ -21,6 +21,10 @@
         @include('visitor.pages.faq')
     @elseif ($page == 'syarat-dan-ketentuan')
         @include('visitor.pages.syarat-ketentuan')
+    @elseif ($page == 'kebijakan-privasi')
+        <p>Sedang dipersiapkan</p>
+    @elseif ($page == 'kalkulator')
+        @include('visitor.pages.kalkulator')
     @else
         <section class="section">
             <div class="container">

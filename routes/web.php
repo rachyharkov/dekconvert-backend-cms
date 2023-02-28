@@ -7,6 +7,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\InstruksiTransaksiController;
 use App\Http\Controllers\KetentuanSyaratController;
 use App\Http\Controllers\KursRateController;
+use App\Http\Controllers\MetodePembayaranController;
 use App\Http\Controllers\SeoSettingController;
 use App\Http\Controllers\SimcardProviderController;
 use App\Http\Controllers\SocialmediaController;
@@ -55,10 +56,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
 
         Route::prefix('simcard-provider')->controller(SimcardProviderController::class)->group(function() {
             Route::get('/', 'index')->name('simcard_provider.index');
-                Route::post('/store', 'store')->name('simcard_provider.store');
-                Route::post('/update', 'update')->name('simcard_provider.update');
-                Route::delete('/{post}/delete', 'destroy')->name('simcard_provider.destroy');
-                Route::post('/upload_image', 'upload_image')->name('simcard_provider.uploadimage');
+            Route::post('/store', 'store')->name('simcard_provider.store');
+            Route::post('/update', 'update')->name('simcard_provider.update');
+            Route::delete('/{post}/delete', 'destroy')->name('simcard_provider.destroy');
+            Route::post('/upload_image', 'upload_image')->name('simcard_provider.uploadimage');
         });
 
         Route::prefix('kurs-rate')->controller(KursRateController::class)->group(function() {
@@ -107,6 +108,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
             Route::post('/store', 'store')->name('testimoni.store');
             Route::post('/update', 'update')->name('testimoni.update');
             Route::delete('/{post}/delete', 'destroy')->name('testimoni.destroy');
+        });
+
+        Route::prefix('metode-pembayaran')->controller(MetodePembayaranController::class)->group(function() {
+            Route::get('/', 'index')->name('metode_pembayaran.index');
+            Route::post('/store', 'store')->name('metode_pembayaran.store');
+            Route::post('/update', 'update')->name('metode_pembayaran.update');
+            Route::delete('/{post}/delete', 'destroy')->name('metode_pembayaran.destroy');
         });
     });
 });

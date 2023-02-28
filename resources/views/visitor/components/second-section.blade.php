@@ -15,7 +15,7 @@
                     <div class="icon"><span class="flaticon-startup"></span></div>
                     <h3>Pelayanan Cepat</h3>
                     <p>
-                        Proses convert pulsa di DEKonvert terbukti mudah, simple, aman, terpercaya, dan CEPAT. Karena kami mengerti, urgensi Anda adalah prioritas kami.
+                        DEKonvert terbukti mudah, simple, aman, terpercaya, dan CEPAT. Karena kami mengerti urgensi Anda.
                     </p>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <div class="icon"><span class="flaticon-shield"></span></div>
                     <h3>Terpercaya Berkat Pelayanan</h3>
                     <p>
-                        Atas testimoni dari para pelanggan, sejak 2017 kami telah terpercaya dan terbukti bahwa kami memberikan pelayanan terbaik.
+                        Sejak 2017 kami telah terpercaya dan terbukti bahwa kami memberikan pelayanan terbaik.
                     </p>
                 </div>
             </div>

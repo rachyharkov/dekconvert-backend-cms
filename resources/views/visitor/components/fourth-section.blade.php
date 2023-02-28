@@ -25,20 +25,41 @@
                                 </div>
                             @else
                                 @foreach ($simcardproviderwithkurs as $scpwk)
-
-                                    <div class="service col-md-12 col-lg-6 d-flex">
-                                        <div class="icon">
-                                            <span class="flaticon-shield"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h3>Design Marketing</h3>
-                                            <p>
-                                                Far far away, behind the word mountains, far from the
-                                                countries Vokalia and Consonantia, there live the blind
-                                                texts.
-                                            </p>
-                                        </div>
-                                    </div>
+                                    @php
+                                        $highestrate = array_reduce($scpwk['kurs_rate'], function($carry, $item) {
+                                            return $carry > $item['rate'] ? $carry : $item['rate'];
+                                        }, 0);
+                                    @endphp
+                                    <details class="kurs-rate-detail col-md-12 col-lg-6 d-flex">
+                                        <summary>
+                                            <div class="kurs-rate-simcardprovider d-flex">
+                                                <div class="text" style="width: 100%;">
+                                                    <h3>{{ $scpwk['simcard_provider_name'] }}</h3>
+                                                    <div class="img-wrapper">
+                                                        <img alt="logo {{ $scpwk['simcard_provider_name'] }}" src="{{ asset('img/simcard_provider/' . $scpwk['simcard_provider_image']) }}"/>
+                                                    </div>
+                                                </div>
+                                                <h3 class="rate-value">{{ $highestrate }}</h3>
+                                            </div>
+                                            <i class="bx bx-chevron-down"></i>
+                                        </summary>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Kurs</th>
+                                                    <th scope="col">Rate</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($scpwk['kurs_rate'] as $kurs)
+                                                    <tr>
+                                                        <td>{{ $kurs['nominal'] }}</td>
+                                                        <td>{{ $kurs['rate'] }}</td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </details>
 
                                 @endforeach
                             @endif

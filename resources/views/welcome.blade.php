@@ -4,7 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta charset="utf-8">
-        <title>Konversi Pulsa ke Bentuk Uang (Trusted Since 2017) &mdash; DEKConvert</title>
+        <title>{{
+             str_replace('-', ' ', ucwords($page))
+            }} &mdash; Konversi Pulsa ke Bentuk Uang (Trusted Since 2017) hanya di DEKConvert</title>
         <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
         <link rel="canonical" href="{{ env('APP_URL') }}">
         <link rel="image_src" href="{{ asset('img/'.$data_seo['image_src']) }}">

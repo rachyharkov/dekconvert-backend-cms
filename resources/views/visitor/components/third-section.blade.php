@@ -26,16 +26,16 @@
                 <h3 class="subheading mb-2">Tentang Kami</h3>
                 <h2 class="heading mb-4">Dek Convert</h2>
                 <p>
-                    Pada saat kita membutuhkan uang dan yang kita punya hanyalah pulsa. Ketika itu terjadi, Anda tak perlu pusing dan gundah gulana. Karena DEKonvert punya solusinya. Tukarkan pulsa Anda dengan rate tertinggi. Pilihan transfer bisa ke rekening bank Anda, maupun ke e-wallet pilihan Anda, OVO, Gopay, DANA, LinkAja, ShopeePay,dan juga yang lainnya.
+                    Pada saat kita membutuhkan uang dan yang kita punya hanyalah pulsa. Ketika itu terjadi, Anda tak perlu pusing dan gundah gulana. Karena DEKonvert punya solusinya.
 
                 </p>
                 <p class="mb-3">
-                    Jangan salah pilih! Gunakan yang sudah terbukti aman dan terpercaya. Gunakan DEKonvert, konversi pulsa, uang sampai, hati lega.
+                    Tukarkan pulsa Anda dengan rate tertinggi. Pilihan transfer bisa ke rekening bank Anda, maupun ke e-wallet pilihan Anda, OVO, Gopay, DANA, LinkAja, ShopeePay,dan juga yang lainnya.
                 </p>
                 <ul class="list-check list-unstyled mb-5">
                     <li>Pelayanan cepat, Transparan dan Aman sejak 2017</li>
                     <li>Tukar pulsa dengan rate tinggi dan nego</li>
-                    <li>Kami memahami kebutuhan anda, maka dari itu kami ingin anda merasa nyaman dan aman dalam bertransaksi dengan kami</li>
+                    <li>Kami memahami kebutuhan anda, maka kami akan membuat anda nyaman bertransaksi</li>
                 </ul>
                 <p><a href="#" class="btn btn-primary">About us</a></p>
             </div>

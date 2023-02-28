@@ -1883,6 +1883,49 @@ textarea {
   .service *:last-child {
     margin-bottom: 0; }
 
+.kurs-rate-simcardprovider {
+  padding: 25px;
+  border: 1px solid #efefef;
+    justify-content: space-between;}
+  .kurs-rate-simcardprovider .img-wrapper {
+    width: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .kurs-rate-simcardprovider .rate-value{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .kurs-rate-simcardprovider h3, .kurs-rate-simcardprovider .h3 {
+    font-size: 16px;
+    font-weight: 700; }
+  .kurs-rate-simcardprovider *:last-child {
+    margin-bottom: 0; }
+.kurs-rate-simcardprovider img {
+    height: 30px;
+}
+
+details.kurs-rate-detail > summary {
+    list-style: none;
+    position: relative;
+}
+
+details.kurs-rate-detail summary .bx-chevron-down {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 2rem;
+    color: #081158;
+}
+
+details.kurs-rate-detail:is([open]) summary .bx-chevron-down {
+    transform: rotate(180deg);
+}
+details.kurs-rate-detail > summary::-webkit-details-marker {
+    display: none;
+}
+
+
 .custom-accordion .accordion-item {
   margin-bottom: 0px;
   position: relative;
