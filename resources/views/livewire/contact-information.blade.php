@@ -18,6 +18,7 @@
                                         <option value="address" {{ $contact->type == 'address' ? 'selected' : '' }}>Address</option>
                                         <option value="phone" {{ $contact->type == 'phone' ? 'selected' : '' }}>Phone</option>
                                         <option value="email" {{ $contact->type == 'email' ? 'selected' : '' }}>Email</option>
+                                        <option value="whatsapp" {{ $contact->type == 'whatsapp' ? 'selected' : '' }}>Whatsapp</option>
                                     </select>
                                 </td>
                                 <td>:</td>
