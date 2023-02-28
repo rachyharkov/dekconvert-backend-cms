@@ -39,7 +39,7 @@
     @endif
     @include('visitor.components.footer-section')
     <div class="float-link">
-        <a href="https://api.whatsapp.com/send?phone=6281211111111&text=Halo%20Admin%20Saya%20ingin%20bertanya%20tentang%20produk%20Anda" target="_blank" class="float-link-item">
+        <a href="https://api.whatsapp.com/send?phone={{$main_whatsapp_number}}&text=Halo%20Admin%20Saya%20ingin%20bertanya%20tentang%20jasa%20convert" target="_blank" class="float-link-item">
             <i class="bx bxl-whatsapp"></i>
         </a>
         <p>Ada yang bisa kami bantu?</p>

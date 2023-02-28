@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7eee7c5e34f25eeab50c4a776539831",
+    "content-hash": "cccd3f6946be88ea8cdf01035bb82dd6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -492,6 +492,43 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "evdigi/generalhelper",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Evdigi-INA/general-helper-laravel.git",
+                "reference": "79ba33183e69b63e3503d5418709f27a907a5cce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Evdigi-INA/general-helper-laravel/zipball/79ba33183e69b63e3503d5418709f27a907a5cce",
+                "reference": "79ba33183e69b63e3503d5418709f27a907a5cce",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Evdigi\\Generalhelper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Evdigi"
+                }
+            ],
+            "description": "Kumpulan function general",
+            "support": {
+                "issues": "https://github.com/Evdigi-INA/general-helper-laravel/issues",
+                "source": "https://github.com/Evdigi-INA/general-helper-laravel/tree/main"
+            },
+            "time": "2023-02-11T14:33:11+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",

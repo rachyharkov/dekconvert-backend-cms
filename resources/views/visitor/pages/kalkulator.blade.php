@@ -10,33 +10,12 @@
                     Simulasikan berapa uang yang akan didapat setelah konversi. Gunakan kalkulator kami untuk mendapatkan hasil yang akurat.
                 </p>
                 <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="#" class="btn btn-primary mr-2">FAQ</a>
-                    <a href="#" class="btn btn-outline-primary">Convert Sekarang!</a>
+                    <a href="faq" class="btn btn-primary mr-2">FAQ</a>
+                    <a href="syarat-dan-ketentuan" class="btn btn-outline-primary">Syarat dan Ketentuan</a>
                 </p>
             </div>
             <div class="col-lg-6">
-                <div class="form-kalkulator" style="max-width: 100%;width: 370px;margin: auto;">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="providerSimcard" class="form-label">Pilih Provider</label>
-                        <select id="providerSimcard" class="form-control">
-                            @foreach ($simcardproviderwithkurs as $sp )
-                                <option value="{{ $sp['id'] }}">{{ $sp['simcard_provider_name'] }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="bankEwalletTujuan" class="form-label">Bank/E-Wallet</label>
-                        <select id="bankEwalletTujuan" class="form-control">
-                            @foreach ($simcardproviderwithkurs as $sp )
-                                <option value="{{ $sp['id'] }}">{{ $sp['simcard_provider_name'] }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
+                <livewire:widget-kalkulator-convert :simcardproviderwithkurs="$simcardproviderwithkurs" :metodepembayaran="$metodepembayaran" />
             </div>
         </div>
     </div>

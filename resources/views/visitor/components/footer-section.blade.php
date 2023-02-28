@@ -43,13 +43,11 @@
                 <div class="widget">
                     <h3 class="heading">Contact</h3>
                     <ul class="list-unstyled quick-info links">
-                        <li class="email">
-                            <a href="#"><span class="__cf_email__" data-cfemail="92fbfcf4fdd2d1fdfefdfefbf0">[email&#160;protected]</span></a>
-                        </li>
-                        <li class="phone"><a href="#">+1 222 212 3819</a></li>
-                        <li class="address">
-                            <a href="#">43 Raymouth Rd. Baltemoer, London 3910</a>
-                        </li>
+                        @foreach ($contact_information as $ci)
+                            <li class="{{$ci['type']}}">
+                                <a href="{{$ci['type'] == 'email' ? 'mailto:' . $ci['value'] : $ci['value']}}">{{$ci['value']}}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

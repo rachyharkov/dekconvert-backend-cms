@@ -2154,6 +2154,8 @@ details.kurs-rate-detail > summary::-webkit-details-marker {
       position: absolute;
       content: "";
       font-family: 'icomoon'; }
+    .site-footer ul.quick-info li.whatsapp:before {
+      content: "\f232"; }
     .site-footer ul.quick-info li.email:before {
       content: "\f0e0"; }
     .site-footer ul.quick-info li.phone:before {

@@ -26,8 +26,6 @@ class MetodePembayaranController extends Controller
         $request->validate([
             'nama_metode_pembayaran' => 'required',
             'jenis_metode_pembayaran' => 'required',
-            'nomor_rekening' => 'required',
-            'atas_nama' => 'required',
             'biaya_admin' => 'required',
         ]);
 
@@ -63,8 +61,6 @@ class MetodePembayaranController extends Controller
         $request->validate([
             'nama_metode_pembayaran' => 'required',
             'jenis_metode_pembayaran' => 'required',
-            'nomor_rekening' => 'required',
-            'atas_nama' => 'required',
             'biaya_admin' => 'required',
         ]);
 

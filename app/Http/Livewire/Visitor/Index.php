@@ -3,8 +3,10 @@
 namespace App\Http\Livewire\Visitor;
 
 use App\Models\About;
+use App\Models\ContactInformation;
 use App\Models\Faq;
 use App\Models\KetentuanSyarat;
+use App\Models\MetodePembayaran;
 use App\Models\SimcardProvider;
 use App\Models\SocialMedia;
 use App\Models\Testimoni;
@@ -21,6 +23,9 @@ class Index extends Component
     public $syarat_ketentuan;
     public $testimonial;
     public $social_media;
+    public $contact_information;
+    public $main_whatsapp_number;
+    public $metodepembayaran;
 
 
     protected $listeners = ['changePage'];
@@ -33,6 +38,9 @@ class Index extends Component
         $this->syarat_ketentuan = KetentuanSyarat::first()->ketentuan_syarat_text;
         $this->testimonial = Testimoni::all()->toArray();
         $this->social_media = SocialMedia::all()->toArray();
+        $this->contact_information = ContactInformation::all()->toArray();
+        $this->main_whatsapp_number = ContactInformation::where('type', 'whatsapp')->first()->value ?? 'not_set';
+        $this->metodepembayaran = MetodePembayaran::all()->toArray();
         $this->page = $page;
     }
 

@@ -44,7 +44,7 @@
                     Dek Convert merupakan penyedia jasa convert pulsa, tukar pulsa, sulap pulsa ke uang atau saldo rekening dengan rate tinggi, cepat dan aman. Bisa juga tukar pulsa ke saldo E-Wallet seperti <span style="color: #4b2489">OVO</span>, <span style="color: #00aad8">Gopay</span>, <span style="color: #00aad8">Dana</span>, <span style="color: #e12428">LinkAja</span>, <span style="color: #ee4d2d">ShopeePay</span> dan Lainnya.
                 </p>
                 <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="#" class="btn btn-primary mr-2"><i class="bx bxl-whatsapp" style="
+                    <a href="https://api.whatsapp.com/send?phone={{ $main_whatsapp_number }}&text=Halo%20Admin%20Saya%20ingin%20convert%20pulsa%20sekian" class="btn btn-primary mr-2"><i class="bx bxl-whatsapp" style="
                         padding: 5px;
                         position: absolute;
                         top: -11px;
