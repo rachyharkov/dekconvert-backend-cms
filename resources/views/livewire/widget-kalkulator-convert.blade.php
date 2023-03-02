@@ -28,12 +28,22 @@
         </button>
         <div class="mb-3">
             @if($convertResult)
-                <div class="alert alert-success mt-3" role="alert">
+                <div class="alert mt-3" role="alert" style="
+                    background-color: #f8f9fa;
+                    border-color: #f8f9fa;
+                    color: #212529;
+                    border-radius: 0.25rem;
+                    border: 1px solid transparent;
+                    padding: 1rem 1rem;
+                    margin-bottom: 1rem;
+                    ">
+
                     <h4 class="alert-heading">Hasil Konversi &#x1F389;</h4>
-                    <p>Anda akan mendapatkan <strong>{{ $convertResult['result_with_biaya_admin'] }}</strong> pada {{ $convertResult['tujuan_tempat_cair'] }}</p>
+                    <p>Anda akan mendapatkan <strong>*{{ $convertResult['result_with_biaya_admin'] }}</strong> pada {{ $convertResult['tujuan_tempat_cair'] }}</p>
                     <p>Sudah siap convert? <a class="btn btn-primary btn-sm" href="https://api.whatsapp.com/send?phone={{$convertResult['whatsapp_number']}}&text=Halo%20Admin%20Saya%20ingin%20convert%20pulsa%20sebesar%20{{$convertResult['result_with_biaya_admin']}}" style="font-size: 11px;padding: 6px;margin-top: -3px;" target="_blank" rel="noopener noreferrer">Convert Sekarang!</a></p>
-                    <p style="font-size:8px; font-style:italic;">*Sesuai dengan kebijakan tujuan tempat cair anda pada {{ $convertResult['tujuan_tempat_cair'] }}, biaya admin sebesar {{ $convertResult['biaya_admin'] }} dibebankan pada hasil convert diatas.</p>
                     <hr>
+                    <p style="font-size:9px; font-style:italic; margin: 0;">*Sesuai dengan kebijakan tujuan tempat cair anda pada {{ $convertResult['tujuan_tempat_cair'] }}, biaya admin sebesar <b>{{ numberToIdr($convertResult['biaya_admin']) }}</b> dibebankan pada hasil convert diatas.</p>
+                    <p style="font-size:9px; font-style:italic;">*Perhitungan konversi menggunakan rumus <b>jumlah pulsa yang dimiliki * rate - biaya admin</b>, dalam kalkulator yang baru saja anda ekskusi menjalankan perhitungan sebagai berikut: <b>{{ $convertResult['pulsa_dimiliki'] }} * {{ $convertResult['kena_rate'] }} - {{ $convertResult['biaya_admin'] }} = {{ $convertResult['result_with_biaya_admin'] }}</b></p>
                 </div>
             @endif
         </div>

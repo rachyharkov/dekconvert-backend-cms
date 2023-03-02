@@ -108,4 +108,3 @@ if(!function_exists('terbilangInRupiahWithCurrency')) {
         return terbilangInRupiah($number) . ' Rupiah';
     }
 }
-
